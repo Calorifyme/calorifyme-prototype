@@ -332,8 +332,10 @@
 				<div id="cspio-field-wrapper">
 					<div class="row">
 						<div class="col-md-12 seperate"><div class="input-group"><input id="cspio-email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="mail.calorifyme@gmal.com" value="mail.calorifyme@gmal.com" readonly>
+							
+							    <br>
 							<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-					<span class="input-group-btn"><button id="cspio-subscribe-btn" class="btn btn-lg btn-primary form-el noglow">Copy</button></span></div></div>
+					<span class="input-group-btn"><button id="cspio-subscribe-btn" style="width:150px;" class="btn btn-lg btn-primary form-el noglow">Copy</button></span></div></div>
 					</div>
 				</div>
 			</form>
@@ -346,7 +348,7 @@
 	</div>
 <script>
 function copymail() {
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("cspio-email");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
